@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleThree.css">
     <title>Página 3 Forms</title>
 </head>
+
 <body>
     <header>
-        <h1>Formulário de Contato</h1>
+        <section class="presentation" id="presentation">
+            <div class="presentation container">
+                <div>
+                    <h1>Formulário de Contato <span></span></h1>
+                    <br>
+                    <nav>
+                        <ul>
+                            <li><a href="PagOne.html">Voltar para Página 1</a></li>
+                            <li><a href="PagTwo.html">Voltar para Página 2</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
     </header>
-    <br>
-    <br>
-    <div id="Div">
-        <nav>
-            <ul>
-                <li><a href="PagOne.html">Voltar para Página 1</a></li>
-                <li><a href="PagTwo.html">Voltar para Página 2</a></li> 
-            </ul>
-        </nav>
-    </div>
 
-    <main>
-        <form action="#" method="POST">
-            <table>
-                <tr>
-                    <td><label for="nome">Nome:</label></td>
-                    <td><input type="text" id="nome" name="nome" required></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Email:</label></td>
-                    <td><input type="email" id="email" name="email" required></td>
-                </tr>
-                <tr>
-                    <td><label for="telefone">Telefone:</label></td>
-                    <td><input type="tel" id="telefone" name="telefone"></td>
-                </tr>
-                <tr>
-                    <td><label for="mensagem">Mensagem:</label></td>
-                    <td><textarea id="mensagem" name="mensagem" rows="4" required></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;"><input type="submit" value="Enviar"></td>
-                </tr>
-            </table>
-        </form>
-    </main>
+    <article id="intro">
+        <div class="all-projects">
+            <div class="project-item">
+                <div class="project-info">
+                    <form action="#" method="POST">
+                        <table>
+                            <tr>
+                                <td><label for="nome">Nome:</label></td>
+                                <td><input type="text" id="nome" name="nome" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email:</label></td>
+                                <td><input type="email" id="email" name="email" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="telefone">Telefone:</label></td>
+                                <td><input type="tel" id="telefone" name="telefone"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mensagem">Mensagem:</label></td>
+                                <td><textarea id="mensagem" name="mensagem" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;"><input type="submit" value="Enviar">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
 
-    <footer>
-        <a href="#">Contato</a>
-    </footer>
+        <footer>
+            <p></p>
+            <a href="./PagOne.html">Voltar Página 1</a>
+        </footer>
+    </article>
 </body>
+
 </html>

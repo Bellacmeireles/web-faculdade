@@ -163,7 +163,7 @@ p{
 
 #intro .project-info{ /* essa seção meche no bloco de cada um dos projetos */
   padding: 50px;
-  /*height: 50%;*/
+  height: 50%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -175,7 +175,7 @@ p{
 }
 
 #intro .project-info h1{
-  font-size: 4.4rem;
+  font-size: 4rem;
   font-weight: 500px;
 }
 #intro .project-info h2{
@@ -183,20 +183,27 @@ p{
   font-weight: 500;
   margin-top: 10px;
 }
-#intro .project-info ul, ol, li, a{
+#intro .project-info ul, li{
     font-size: 1.6rem;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 5px;
     color: #fff;
   }
-  #ol {
+#intro .project-info ol, a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #fff;
+  }
+  
+  /*#ol {
     padding-left: 400px;
     text-align: center;
   }
   #oldois {
-    padding-left: 615px;
+    padding-left: 300px;
     text-align: center;
-  }
+  }*/
 
 /* Estilo para o rodapé */
 footer {
@@ -266,7 +273,7 @@ footer a {
 
 /* media query */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1115px) {
   #intro .project-item{
     flex-direction: row;
     height: 400px;
@@ -274,6 +281,7 @@ footer a {
     width: 100%;
   }
   #intro .allprojects .projectinfo{
+    padding: 60px;
     height: 100%
   }
   #intro .allprojects .project-img{

@@ -17,11 +17,68 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
-    background: linear-gradient(to right, #1c6bbe, #0b86af); /* Cor de fundo azul */
+    padding: 40px 0;
+    background: linear-gradient(to right, #406388, #0b86af); /* Cor de fundo azul */
     color: #fff;
     margin-bottom: 5rem;
 }
+
+.container{
+    min-height: 24vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .section-title{
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+#presentation{ /* essa seção meche no background da primeira dobra */
+    background-size: cover;
+    background-position: top center; 
+    position: relative;
+    /*z-index: 0;*/
+  }
+#presentation h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5;
+  }
+
+
+#intro .project-info h1{
+    font-size: 4rem;
+    font-weight: 500px;
+  }
+  #intro .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  #intro .project-info ul, li{
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-top: 5px;
+      color: #fff;
+    }
+  #intro .project-info ol, a{
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-top: 5px;
+      color: #fff;
+    }
 
 /* Estilo para a navegação */
 nav ul {
@@ -36,46 +93,45 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li:last-child {
-    margin-right: 0;
-}
-
 nav ul li a {
     font-size: 2.4rem;
-    color: #d12020;
+    color: #ffffff;
     text-decoration: none;
     padding: 5px 10px;
-    border: 1px solid #000000;
+    border: 1px solid #53c0b267;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #0e7bd4;
+    background-color: #21bb99;
     color: #fcfdff; /* Cor de fundo azul */
 }
 
-/* Estilo para o formulário */
-main {
-    margin: 20px 206px ;
-    width: 80%;
-    display: flex;
-    justify-content: center;
+
+form {
+    max-width: 600px; /* Reduzindo a largura do formulário */
+    margin: 0 auto; /* Centralizando o formulário */
+    padding: 50px; /* Adicionando um espaçamento interno ao formulário */
+    background-image: linear-gradient(60deg, #17729cea 0%, #1763aac0 100%); /* Cor de fundo do formulário */
+    border-radius: 10px; /* Arredondando as bordas do formulário */
+    margin-bottom: 50px; /* Adicionando espaçamento inferior ao formulário */
 }
 
 form table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px; /* Reduzindo o espaçamento entre o formulário e outros elementos */
 }
 
 form table td {
-    padding: 10px;
-    text-align: center; /* Centraliza o conteúdo da célula */
+    padding: 10px 0;
 }
 
-form table td label { 
-    font-size: 2.4rem;
+form table td label {
     font-weight: bold;
+    font-size: 2rem;
+    color: #000000; /* Cor do texto */
 }
 
 form table td input[type="text"],
@@ -84,43 +140,68 @@ form table td input[type="tel"],
 form table td textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #943636; /* Cor da borda */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease;
+}
+
+form table td textarea {
+    resize: vertical;
 }
 
 form table td input[type="submit"] {
-    background-color: #0f4988; /* Cor de fundo azul */
+    background-color: #0d3f75; /* Cor de fundo azul */
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.3s ease;
+    font-size: 1.2rem;
 }
 
 form table td input[type="submit"]:hover {
-    background-color: #103257; /* Cor de fundo azul escuro */
+    background-color: #13b664; /* Cor de fundo azul escuro */
 }
 
 /* Estilo para o rodapé */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(to right, #1c6bbe, #0b86af);
+    background-color: #0d3f75;
     color: #fff;
     text-align: center;
     padding: 20px;
+    position: fixed; /* Alterado para posição fixa */
+    bottom: 0; /* Alinhando o rodapé ao fundo da página */
+    width: 100%; /* Definindo a largura do rodapé como 100% */
 }
 
+/* Estilo para o link de contato no rodapé */
 footer a {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px dashed #fff;
+    font-weight: bold;
 }
 
-footer a:hover {
-    color: #ccc;
-    border-bottom: 1px dashed #ccc;
+
+
+@media only screen and (min-width: 1115px) {
+    #intro .project-item{
+      flex-direction: row;
+      height: 400px;
+      margin: 0;
+      width: 100%;
+    }
+    #intro .allprojects .projectinfo{
+      padding: 60px;
+      height: 100%
+    }
+    #intro .allprojects .project-img{
+      height: 100%
+    }
+    #intro .project-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  
 }
