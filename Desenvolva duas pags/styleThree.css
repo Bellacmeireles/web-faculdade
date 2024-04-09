@@ -1,0 +1,126 @@
+/* Estilo para o cabeçalho */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@200;400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-size: border-box;
+}
+
+html{
+  font-size: 10px;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background: linear-gradient(to right, #1c6bbe, #0b86af); /* Cor de fundo azul */
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+/* Estilo para a navegação */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 2.5rem;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    font-size: 2.4rem;
+    color: #d12020;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0e7bd4;
+    color: #fcfdff; /* Cor de fundo azul */
+}
+
+/* Estilo para o formulário */
+main {
+    margin: 20px 206px ;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form table td {
+    padding: 10px;
+    text-align: center; /* Centraliza o conteúdo da célula */
+}
+
+form table td label { 
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+form table td input[type="text"],
+form table td input[type="email"],
+form table td input[type="tel"],
+form table td textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form table td input[type="submit"] {
+    background-color: #0f4988; /* Cor de fundo azul */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+form table td input[type="submit"]:hover {
+    background-color: #103257; /* Cor de fundo azul escuro */
+}
+
+/* Estilo para o rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #1c6bbe, #0b86af);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    font-size: 1.7rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dashed #fff;
+}
+
+footer a:hover {
+    color: #ccc;
+    border-bottom: 1px dashed #ccc;
+}
