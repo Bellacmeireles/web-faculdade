@@ -62,6 +62,38 @@
         <footer>
             <p></p>
             <a href="./PagOne.html">Voltar Página 1</a>
+            <br>
+        <button id="footer-toggle">Mostrar Informações do Editor</button>
+        <div class="footer-menu" id="footer-menu">
+          <script>
+            var fullName = "Isabella Cabral";
+            var currentYear = new Date().getFullYear();
+            var socialMedia = {
+              facebook: "seu_facebook",
+              instagram: "seu_instagram",
+              linkedin: "seu_linkedin"
+            };
+            var gender = "Feminino";
+            var poleLocation = "São José dos Campos";
+
+            document.write("<p>" + fullName + "</p>");
+            document.write("<p>" + currentYear + "</p>");
+            document.write("<p>Facebook: " + socialMedia.facebook + "</p>");
+            document.write("<p>Instagram: " + socialMedia.instagram + "</p>");
+            document.write("<p>LinkedIn: " + socialMedia.linkedin + "</p>");
+            document.write("<p>Sexo: " + gender + "</p>");
+            document.write("<p>Localização do Polo: " + poleLocation + "</p>");
+          </script>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var footerMenu = document.getElementById('footer-menu');
+                footerMenu.style.display = 'none'; // Inicia o footer-menu como oculto
+                document.getElementById('footer-toggle').addEventListener('click', function () {
+                    footerMenu.style.display = (footerMenu.style.display === 'block') ? 'none' : 'block';
+                });
+            });
+        </script>
         </footer>
     </article>
 </body>

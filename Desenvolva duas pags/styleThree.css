@@ -22,6 +22,56 @@ header {
     color: #fff;
     margin-bottom: 5rem;
 }
+#intro form {
+  max-width: 600px; /* Define a largura máxima do formulário */
+  margin: 0 auto; /* Centraliza o formulário na página */
+  padding: 20px; /* Adiciona um espaçamento interno ao formulário */
+}
+
+#intro table {
+  width: 100%; /* Define a largura da tabela como 100% */
+}
+
+#intro table td {
+  padding: 10px 0; /* Adiciona um espaçamento interno às células da tabela */
+}
+
+#intro table td label {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #000; /* Cor do texto */
+}
+
+#intro table td input[type="text"],
+#intro table td input[type="email"],
+#intro table td input[type="tel"],
+#intro table td textarea {
+  width: calc(100% - 16px); /* Define a largura dos campos de entrada, considerando o padding */
+  padding: 8px;
+  border: 1px solid #ccc; /* Cor da borda */
+  border-radius: 5px;
+  font-size: 1.4rem;
+  transition: border-color 0.3s ease;
+}
+
+#intro table td textarea {
+  resize: vertical; /* Permite a redimensionamento vertical do textarea */
+}
+
+#intro table td input[type="submit"] {
+  background-color: #0d3f75; /* Cor de fundo azul */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 1.4rem;
+}
+
+#intro table td input[type="submit"]:hover {
+  background-color: #13b664; /* Cor de fundo azul escuro */
+}
 
 .container{
     min-height: 24vh;
@@ -110,6 +160,7 @@ nav ul li a:hover {
 
 
 form {
+    margin-top: 20px;
     max-width: 600px; /* Reduzindo a largura do formulário */
     margin: 0 auto; /* Centralizando o formulário */
     padding: 50px; /* Adicionando um espaçamento interno ao formulário */
@@ -167,24 +218,49 @@ form table td input[type="submit"]:hover {
 
 /* Estilo para o rodapé */
 footer {
-    background-color: #0d3f75;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed; /* Alterado para posição fixa */
-    bottom: 0; /* Alinhando o rodapé ao fundo da página */
-    width: 100%; /* Definindo a largura do rodapé como 100% */
+  background-color: #0d3f75;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed; /* Alterado para posição fixa */
+  bottom: 0; /* Alinhando o rodapé ao fundo da página */
+  width: 100%; /* Definindo a largura do rodapé como 100% */
 }
 
 /* Estilo para o link de contato no rodapé */
 footer a {
-    font-size: 1.9rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  font-size: 1.9rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-
+#footer-toggle {
+font-size: 1.7rem;
+font-weight: bold;
+margin: 0 auto;
+background-image: linear-gradient(60deg, #3d6bc0 , #5557d4 40%, #3292b8 );
+border-radius: 10px;
+color: rgb(255, 255, 255);
+border: none;
+padding: 10px 20px;
+text-align: center;
+cursor: pointer;
+display: block;
+margin-top: 20px;
+}
+.footer-menu {
+width: 30%;
+display: flex;
+margin: 45px auto;
+overflow: hidden;
+background-image: linear-gradient(60deg, #3d6bc0 , #5557d4 40%, #3292b8 );
+border: none;
+margin-top: 10px;
+padding: 10px 20px;
+text-align: center;
+border-radius: 6px;
+}
 
 @media only screen and (min-width: 1115px) {
     #intro .project-item{

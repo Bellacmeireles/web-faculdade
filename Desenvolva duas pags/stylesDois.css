@@ -221,6 +221,33 @@ footer a {
     font-weight: bold;
 }
 
+#footer-toggle {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 0 auto;
+  background-image: linear-gradient(60deg, #3d6bc0 , #5557d4 40%, #3292b8 );
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+}
+.footer-menu {
+  width: 30%;
+  display: flex;
+  margin: 45px auto;
+  overflow: hidden;
+  background-image: linear-gradient(60deg, #3d6bc0 , #5557d4 40%, #3292b8 );
+  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
 #intro .project-img{ /* essa seção meche no tamanho da todas as imagens */
     flex-basis: 27%;
     height: 300px;
