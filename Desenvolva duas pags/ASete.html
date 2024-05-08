@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ASete.css" />
+    <title>A7 - Aplicando conhecimento</title>
+</head>
+
+<body>
+
+    <section class="presentation" id="presentation">
+        <div class="presentation container">
+          <div>
+            <h1>ESPORTES PREFERIDOS<span></span></h1>
+            <a href="#intro" type="button" class="cta">INTRODUÇÃO</a>
+            <br>
+            <br>
+            <nav>
+              <p><a href="PagOne.html" type="button" class="cta2">Ir para página 1</a></p>
+            </nav>
+          </div>
+        </div>
+    
+      </section>
+
+    <article id="intro">
+        <div class="intro container">
+            <div class="intro header">
+                <!--<h1 class="section-title"><span>Categorias escolhidas</span></h1>-->
+            </div>
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Categorias escolhidas</h1>
+                        <button id="mostrar-informacoes">Mostrar informações dos times</button>
+                        <div id="times-info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <footer>
+        <p>Aperte em "Clique aqui" e leia este documento para aprender mais sobre TI:</p>
+        <a href="https://www.napratica.org.br/ti-entenda-de-uma-vez-o-que-e-a-tecnologia-da-informacao/">Clique
+            aqui</a>
+        <br><br>
+        <a href="./PagThree.html">Contato</a>
+        <br>
+        <button id="footer-toggle">Mostrar Informações do Editor</button>
+        <div class="footer-menu" id="footer-menu">
+            <script>
+                var fullName = "Isabella Cabral";
+                var currentYear = new Date().getFullYear();
+                var socialMedia = {
+                    facebook: "seu_facebook",
+                    instagram: "seu_instagram",
+                    linkedin: "seu_linkedin"
+                };
+                var gender = "Feminino";
+                var poleLocation = "São José dos Campos";
+
+                document.write("<p>" + fullName + "</p>");
+                document.write("<p>" + currentYear + "</p>");
+                document.write("<p>Facebook: " + socialMedia.facebook + "</p>");
+                document.write("<p>Instagram: " + socialMedia.instagram + "</p>");
+                document.write("<p>LinkedIn: " + socialMedia.linkedin + "</p>");
+                document.write("<p>Sexo: " + gender + "</p>");
+                document.write("<p>Localização do Polo: " + poleLocation + "</p>");
+            </script>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var footerMenu = document.getElementById('footer-menu');
+                footerMenu.style.display = 'none'; // Inicia o footer-menu como oculto
+                document.getElementById('footer-toggle').addEventListener('click', function () {
+                    footerMenu.style.display = (footerMenu.style.display === 'block') ? 'none' : 'block';
+                });
+            });
+        </script>
+    </footer>
+
+    <!-- Referência ao arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
