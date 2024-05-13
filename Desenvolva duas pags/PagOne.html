@@ -91,16 +91,36 @@
           </script>
         </div>
         <script>
-          document.addEventListener("DOMContentLoaded", function() {
+          document.addEventListener("DOMContentLoaded", function () {
             var footerMenu = document.getElementById('footer-menu');
             footerMenu.style.display = 'none'; // Inicia o footer-menu como oculto
             document.getElementById('footer-toggle').addEventListener('click', function () {
-                footerMenu.style.display = (footerMenu.style.display === 'block') ? 'none' : 'block';
+              footerMenu.style.display = (footerMenu.style.display === 'block') ? 'none' : 'block';
             });
-        });
+          });
         </script>
       </footer>
   </article>
+
+  <script>
+    window.addEventListener('load', function () {
+      var fullName = "Isabella Cabral";
+      var universityInfo = "São José dos Campos/Tecnologia da Informação - Mackenzie";
+      var now = new Date();
+      var hour = now.getHours();
+      var dayOfWeek = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'][now.getDay()];
+      var greeting = '';
+      if (hour < 12) {
+        greeting = 'Bom Dia!';
+      } else if (hour < 18) {
+        greeting = 'Boa Tarde!';
+      } else {
+        greeting = 'Boa Noite!';
+      }
+      // Exibe caixa de diálogo com as informações
+      alert("Seu nome completo:\n" + fullName + "\n\nCidade/curso – nome da Universidade:\n" + universityInfo + "\n\n" + greeting + " Hoje é " + dayOfWeek);
+    });
+  </script>
 </body>
 
 </html>

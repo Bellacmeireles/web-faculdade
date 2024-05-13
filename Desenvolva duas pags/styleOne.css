@@ -185,6 +185,7 @@ p{
   flex-direction: column;
   background-image: linear-gradient(60deg, #104ec0 0%, #34158a 100%);
   color: white;
+  border-radius: 5px;
  
 }
 
